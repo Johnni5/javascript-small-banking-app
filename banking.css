@@ -1,0 +1,130 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: block;
+  justify-content: space-evenly;
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: lightslategray;
+  border-radius: 10px;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.balance {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.balance::after {
+  content: " EUR";
+}
+
+.tile-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.tile {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgba(33, 86, 183, 0.4);
+  color: white;
+}
+
+.tile::after {
+  content: " EUR";
+}
+
+.income-tile {
+  border-top-left-radius: 10px;
+}
+
+.expense-tile {
+  border-top-right-radius: 10px;
+}
+
+.tile-label {
+  margin-right: 5px;
+}
+
+.transaction-list {
+  padding: 0;
+  margin-bottom: 25px;
+  height: 140px;
+  overflow: auto;
+}
+
+.transaction {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+}
+
+.transaction .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.transaction .type {
+  width: 50%;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.transaction .amount {
+  width: 50%;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.transaction .amount::after {
+  content: " EUR";
+}
+
+.action-buttons {
+  display: flex;
+}
+
+.action-buttons:hover .action-button {
+  opacity: 0.4;
+}
+
+.action-buttons .action-button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.action-button {
+  width: 50%;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+}
+
+#depositButton {
+  border-bottom-left-radius: 10px;
+  background-color: rgba(85, 107, 47, 0.8);
+}
+
+#withdrawButton {
+  border-bottom-right-radius: 10px;
+  background-color: rgba(205, 92, 92, 0.8);
+}

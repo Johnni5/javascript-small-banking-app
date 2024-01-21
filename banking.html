@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konto App</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="banking.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Kontostand</h1>
+      <div id="balance" class="balance">30</div>
+      <div class="tile-container">
+        <div class="tile income-tile">
+          <span class="tile-label">Einnahmen</span>
+          <span id="income" class="tile-value">50</span>
+        </div>
+        <div class="tile expense-tile">
+          <span class="tile-label">Ausgaben</span>
+          <span id="expenses" class="tile-value">20</span>
+        </div>
+      </div>
+      <div id="transactionList" class="transaction-list">
+        <div class="transaction">
+          <div class="column">
+            <div class="type">Auszahlung</div>
+          </div>
+          <div class="column">
+            <div class="amount">10</div>
+          </div>
+        </div>
+        <div class="transaction">
+          <div class="column">
+            <div class="type">Einzahlung</div>
+          </div>
+          <div class="column">
+            <div class="amount">50</div>
+          </div>
+        </div>
+      </div>
+      <div class="action-buttons">
+        <button id="depositButton" class="action-button">Einzahlen</button>
+        <button id="withdrawButton" class="action-button">Abheben</button>
+      </div>
+    </div>
+    <script text="text/javascript" src="banking.js"></script>
+  </body>
+</html>
